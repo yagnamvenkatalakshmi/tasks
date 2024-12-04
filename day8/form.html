@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* for increasing the box size */
+      .l{width: 300px; 
+        height: 20px;
+        font-size: 16px;
+        padding: 7px;
+      }
+    </style>
+</head>
+<body style="margin-left: 300px;background-color: black;color: white;">
+    <div><br>
+    <h2 style="margin-left: 200px;font-family: Arial, Helvetica, sans-serif;color: red;">REGISTRATION FORM</h2>
+</div><br>
+    <form action="mailto:yagnamnivedha@gmail.com" method="post">
+        <!-- <label for=""></label>
+        <input type="text">
+        <label for=""></label>
+        <input type="text">
+        <label for=""></label>
+        <input type="text">
+        <label for=""></label>
+        <input type="text">
+        <label for=""></label>
+        <input type="text">
+        <label for=""></label>
+        <input type="text"> -->
+        <label for="a">Full Name:<span style="color: red;"> * <span></label><br><br>
+        <input type="text" name="first name" placeholder="Enter first name" id="a" class="l" required>
+        <input type="text" name="last name" placeholder="Enter last name" id="a" class="l" required><br><br>
+        <label for="b">Password:<span style="color: red;"> * <span></span></label><br><br>
+        <input type="password" name="password" placeholder="Enter your password" id="b" class="l" required><br><br>
+        <label for="c">Email:<span style="color: red;"> * <span></span></label><br><br>
+        <input type="email" name="email" placeholder="Enter email" id="c" class="l" required><br><br>
+        <label for="d">Phone:<span style="color: red;"> * <span></span></label><br><br>
+        <input type="number" name="mobile number" placeholder="Enter mobile number" id="d" class="l" required><br><br>
+        <label for="e">Date Of Birth:</label><br><br>
+        <input type="date" name="date" id="e" class="l" required><br><br>
+        <label for="f"> Current Address:<span style="color: red;"> * <span></span></label><br><br>
+        <input type="text" name="address" id="f" class="l" required><br><br>
+        <label for="f">Pin Code:<span style="color: red;"> * <span></span></label><br><br>
+        <input type="number" name="pin" id="g" class="l" required><br>
+        <p>Upload Your Resume:<span style="color: red;"> * <span></span></p>
+            <label for="aa">
+                <div style="border: 1px dashed; width: 600px;height:120px;border-radius:15px;background-color:whitesmoke;color:black;"><br>
+                   <center>
+                    <img src="data:image/png;base64,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" alt="" height="30px"><br>
+                    <h7><b>Upload a file</b></h7><br>
+                    <span>Drag and drop a file here</span></center>
+                    <input type="file" name="file" id="aa" hidden required>
+                </div>
+            </label><br>
+        <p>Select Gender:<span style="color: red;"> * <span></span><p>
+        <input type="radio" id="1" name="ni">
+        <label for="1">FEMALE</label><br>
+        <input type="radio" id="2" name="ni">
+        <label for="2">MALE</label><br>
+        <p>Skills:<span style="color: red;"> * <span></span></p>
+        <input type="checkbox" id="3">
+        <label for="3">HTML</label><br>
+        <input type="checkbox" id="4">
+        <label for="4">CSS</label><br>
+        <input type="checkbox" id="5">
+        <label for="5">PYTHON</label><br>
+        <input type="checkbox" id="6">
+        <label for="6">JAVA</label><br><br>
+        <input type="checkbox" id="7">
+        <label for="7">I agree to the terms and conditions<span style="color: red;"> * <span></span></label><br><br>
+        <input required type="submit" value="submit Details" style="background-color:green ; width: 200px;border-radius: 6px;height: 27px;color: white;text-align:center; margin-left: 200px;">
+    </form>
+</body>
+</html>
